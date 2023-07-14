@@ -13,7 +13,7 @@ const cors = require ("cors");
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
-app.use (cors());
+app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
